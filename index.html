@@ -2,157 +2,425 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CV Dong Zechen</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            body {
+                background-color: #f8f9fa;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #333;
+            }
+            .section-header {
+                background: linear-gradient(to right, #0d6efd, #198754);
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin: 25px 0 15px 0;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+            .card {
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+                margin-bottom: 20px;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+            }
+            .main-container {
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.05);
+                padding: 25px;
+                margin: 20px auto;
+            }
+            .profile-img {
+                border-radius: 50%;
+                border: 3px solid #0d6efd;
+                max-width: 150px;
+            }
+            footer {
+                border-top: 1px solid #dee2e6;
+                margin-top: 30px;
+            }
+            .social-icons a {
+                font-size: 1.5rem;
+                margin-right: 15px;
+                color: #495057;
+            }
+            .social-icons a:hover {
+                color: #0d6efd;
+            }
+        </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            
-              <a class="navbar-brand" href="#">&nbsp &nbsp Personal CV</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Personal Link
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/zechendong/">Linkedin</a></li>
-                      <li><a class="dropdown-item" href="https://www.facebook.com/adama.dong.14">Facebook</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <!--<li><a class="dropdown-item" href="https://zdong.perso.centrale-marseille.fr/">Personal Site</a></li>-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fas fa-id-card"></i> Zechen Dong | Personal CV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-link"></i> Personal Links
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://www.linkedin.com/in/zechendong/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                                <li><a class="dropdown-item" href="https://www.facebook.com/adama.dong.14"><i class="fab fa-facebook"></i> Facebook</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <!--<li><a class="dropdown-item" href="https://zdong.perso.centrale-marseille.fr/"><i class="fas fa-globe"></i> Personal Site</a></li>-->
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-        <br>
-        <h3><strong><em>Self Introduction</em></strong></h3>
-        <div >
-            I am Dong Zechen, a 24-years-old graduate student from Beihang University.  My primary research interests are in the field of reliability of GPU clusters during AI training. I used to study at Ecole Centrale Méditerranée (ECM) for a double degree in General Engineer Programme. 
+        
+        <div class="container main-container">
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <img src="selfie.jpg" class="img-fluid profile-img" alt="Zechen Dong">
+                </div>
+                <div class="col-md-9">
+                    <h1 class="display-4">Zechen Dong</h1>
+                    <p class="lead">Graduate Student in System Engineering</p>
+                    <div class="social-icons mb-3">
+                        <a href="https://www.linkedin.com/in/zechendong/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/adama.dong.14" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:dong.zechen@foxmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p class="text-muted">
+                        <i class="fas fa-map-marker-alt"></i> Beijing, China &nbsp;|&nbsp;
+                        <i class="fas fa-phone"></i> (+86) 13370926285 &nbsp;|&nbsp;
+                        <i class="fas fa-envelope"></i> dong.zechen@foxmail.com
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="section-header"><i class="fas fa-user"></i> About Me</h3>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">I am Dong Zechen, a 24-years-old graduate student from Beihang University. My primary research interests are in the field of reliability of GPU clusters during AI training.
+                      <br>
+                      <br>
+                      I pursue my education through an integrated program that blends the Chinese and French education systems, enhancing my self-learning ability while equipping me with valuable cross-cultural communication skills and interdisciplinary collaboration experience.</p>
+                </div>
+            </div>
+
+            <h3 class="section-header"><i class="fas fa-graduation-cap"></i> Education</h3>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Master's Degree</h5>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://www.buaa.edu.cn/__local/B/CD/A6/968D8F6600C0B8195CD59008BF5_9249A080_12AB7.jpg?e=.jpg" class="img-fluid rounded-start p-2" alt="Beihang University">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">System Engineering</h5>
+                                    <p class="card-text text-muted"><i class="far fa-calendar-alt"></i> 2023-Present</p>
+                                    <a href="https://www.buaa.edu.cn/" class="btn btn-outline-primary btn-sm" target="_blank">Beihang University</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-success text-white">
+                            <h5>Double Degree</h5>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="logomed.png" class="img-fluid rounded-start p-2" alt="Centrale Méditerranée">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">General Engineer Programme</h5>
+                                    <p class="card-text text-muted"><i class="far fa-calendar-alt"></i> 2022-2024</p>
+                                    <a href="https://www.centrale-mediterranee.fr/fr" class="btn btn-outline-success btn-sm" target="_blank">Centrale Méditerranée</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-info text-white">
+                            <h5>Bachelor's Degree</h5>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://www.buaa.edu.cn/__local/B/CD/A6/968D8F6600C0B8195CD59008BF5_9249A080_12AB7.jpg?e=.jpg" class="img-fluid rounded-start p-2" alt="Beihang University">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mathematics and Applied Mathematics</h5>
+                                    <p class="card-text text-muted"><i class="far fa-calendar-alt"></i> 2019-2023</p>
+                                    <a href="https://www.buaa.edu.cn/" class="btn btn-outline-info btn-sm" target="_blank">Beihang University</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h3 class="section-header"><i class="fas fa-briefcase"></i> Work Experience</h3>
+            <div class="card">
+                <div class="card-header text-dark" style="background-color: #FFFFCC;">
+                    <h5 class="mb-0">Data Collection Assistant</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6 class="card-subtitle mb-2 text-muted">Yantai Haisen Bigdata .CO, LTD</h6>
+                            <span class="badge bg-secondary mb-3"><i class="far fa-calendar-alt"></i> July 2023 - 1 month internship</span>
+                        </div>
+                        <div class="col-md-8">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-light rounded mb-2">
+                                    <i class="fas fa-tasks" style="color: #b8860b;"></i>
+                                    <strong>Data Collection:</strong> Gathered information using Python crawlers to provide suggestions for lists of available tech news sites
+                                </li>
+                                <li class="list-group-item bg-light rounded mb-2">
+                                    <i class="fas fa-brain" style="color: #b8860b;"></i>
+                                    <strong>ML Project Support:</strong> Learned and understood the team's project to translate common and specialized names of reactive materials based on machine learning and big data
+                                </li>
+                                <li class="list-group-item bg-light rounded mb-2">
+                                    <i class="fas fa-comments" style="color: #b8860b;"></i>
+                                    <strong>Research Contribution:</strong> Participated in discussions on nomenclature for complex intermediates, and introduced related theories to supplement the team's knowledge base
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h3 class="section-header"><i class="fas fa-project-diagram"></i> Project Experience</h3>
+            <div class="card">
+                <div class="card-header text-dark" style="background-color: #CCCCFF;">
+                    <h5 class="mb-0">Reliability Evaluation of Compute Network</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="badge bg-light text-dark me-2"><i class="fas fa-calendar-alt" style="color: #6666cc;"></i> 2024.06-</span>
+                        <span class="badge bg-light text-dark"><i class="fas fa-tags" style="color: #6666cc;"></i> Research Project</span>
+                    </div>
+                    <div class="card-text">
+                        <div class="alert alert-light border-start border-4" style="border-color: #CCCCFF !important;">
+                            <i class="fas fa-cogs" style="color: #6666cc;"></i>
+                            <strong>Role:</strong> Lead researcher for reliability test profiles
+                        </div>
+                        <p>Responsible for constructing reliability test profiles for aggregated communication-based computing networks, including:</p>
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-network-wired" style="color: #6666cc;"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <p class="mb-0">Network structure research and modeling</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-code" style="color: #6666cc;"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <p class="mb-0">Training algorithms implementation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-traffic-light" style="color: #6666cc;"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <p class="mb-0">Traffic generation and analysis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header text-dark" style="background-color: #CCCCFF;">
+                  <h5 class="mb-0">Browser-Server Architecture System Development</h5>
+              </div>
+              <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                      <span class="badge bg-light text-dark me-2"><i class="fas fa-calendar-alt" style="color: #6666cc;"></i> 2024.09-</span>
+                      <span class="badge bg-light text-dark"><i class="fas fa-tags" style="color: #6666cc;"></i> Development Project</span>
+                  </div>
+                  <div class="card-text">
+                      <div class="alert alert-light border-start border-4" style="border-color: #CCCCFF !important;">
+                          <i class="fas fa-laptop-code" style="color: #6666cc;"></i>
+                          <strong>Role:</strong> Lead System Architect
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="card mb-2 border-0">
+                                  <div class="card-body p-2 bg-light rounded">
+                                      <h6 class="card-title"><i class="fas fa-sitemap" style="color: #6666cc;"></i> System Architecture</h6>
+                                      <p class="card-text small">Designed modular architecture based on Node.JS Express framework</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="card mb-2 border-0">
+                                  <div class="card-body p-2 bg-light rounded">
+                                      <h6 class="card-title"><i class="fas fa-cogs" style="color: #6666cc;"></i> Functionality Development</h6>
+                                      <p class="card-text small">Implemented core business logic and API endpoints</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header text-dark" style="background-color: #CCCCFF;">
+                <h5 class="mb-0">Memory Metal Power Generation Structures</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <span class="badge bg-light text-dark me-2"><i class="fas fa-calendar-alt" style="color: #6666cc;"></i> 2023.08-2024.01</span>
+                    <span class="badge bg-light text-dark"><i class="fas fa-tags" style="color: #6666cc;"></i> Research & Development</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="alert alert-light border-start border-4" style="border-color: #CCCCFF !important;">
+                            <h6><i class="fas fa-lightbulb" style="color: #6666cc;"></i> Project Goal</h6>
+                            <p class="small mb-0">Realize secondary use of internal energy, primarily using the superelasticity of nickel-titanium alloys</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h6><i class="fas fa-tasks" style="color: #6666cc;"></i> Contributions:</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light rounded mb-2 p-2 small">
+                                <i class="fas fa-file-alt" style="color: #6666cc;"></i> Wrote mid-project documentation in French
+                            </li>
+                            <li class="list-group-item bg-light rounded mb-2 p-2 small">
+                                <i class="fas fa-search" style="color: #6666cc;"></i> Participated in exploratory research on Ni-Ti alloy properties
+                            </li>
+                            <li class="list-group-item bg-light rounded mb-2 p-2 small">
+                                <i class="fas fa-tools" style="color: #6666cc;"></i> Assisted in design and assembly of prototype structures
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr class="border border border-2 opacity-100">
-        <h3><strong><em>Study Experience</em></strong></h3>
-        <hr class="border border-black border-2 opacity-100">
-        <div class="row">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="https://www.buaa.edu.cn/__local/B/CD/A6/968D8F6600C0B8195CD59008BF5_9249A080_12AB7.jpg?e=.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Master's degree</h5>
-                  <p class="card-text">System engineering</p>
-                  <p class="card-text"><small class="text-body-secondary">2023-</small></p>
-                  <a href="https://www.buaa.edu.cn/" class="card-link">Beihang University</a>
+
+            <h3 class="section-header"><i class="fas fa-cogs"></i> Skills</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Programming</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label class="form-label">Python</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">HTML/CSS/JavaScript</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Java/C++</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="logemed.png"  class="card-img-bottom rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Double degree </h5>
-                  <p class="card-text">General Engineer Programme</p>
-                  <p class="card-text"><small class="text-body-secondary">2022-2024</small></p>
-                  <a href="https://www.centrale-mediterranee.fr/fr" class="card-link">Centrale Méditerranée</a>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0">Languages</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label class="form-label">Chinese (Native)</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">English (TOEIC 965/990; CET-6 556/710)</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">French (DALF C1)</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="https://www.buaa.edu.cn/__local/B/CD/A6/968D8F6600C0B8195CD59008BF5_9249A080_12AB7.jpg?e=.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Bachelor's degree</h5>
-                  <p class="card-text">Mathematics and Applied Mathematics</p>
-                  <p class="card-text"><small class="text-body-secondary">2019-2023</small></p>
-                  <a href="https://www.buaa.edu.cn/" class="card-link">Beihang University</a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         
-        <h3><strong><em>Work Experience</em></strong></h3>
-        <hr class="border border-black border-2 opacity-100">
-        <div class="card" style="width: 25rem;">
-          <div class="card-body">
-            <h5 class="card-title">Data Collection assitant</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Yantai Haisen Bigdata .CO, LTD </h6>
-            <p class="card-text"><em>2023.07 - 1 month internship</em>
-              <br>
-              Using Python crawler to collect information
-            </p>
-          </div>
-        </div>
-        <br>
-        
-        <h3><strong><em>Project Experience</em></strong></h3>
-        <hr class="border border-black border-2 opacity-100">
-        <div class="card" style="width: 25rem;">
-          <div class="card-body">
-            <h5 class="card-title">Reliability evaluation of Compute Network</h5>
-            <p class="card-text">
-              <br>
-              Responsible for the modelisation of the network
-            </p>
-          </div>
-        </div>
-        <br>
-        <br>
-        <footer class="bd-footer py-4 py-md-2 mt-5 bg-body-secondary">
-            <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
-              <div class="row">
-                <div class="col-lg-3 mb-3"> 
-                    <img src="icon.jpg" class="img-thumbnail" alt="..." >
+        <footer class="py-4 bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 mb-3"> 
+                        <img src="icon.jpg" class="img-thumbnail profile-img" alt="Zechen Dong">
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <h4>Zechen DONG</h4>
+                        <p>
+                            <i class="fas fa-university"></i> Student at Beihang University
+                            <br>
+                            <i class="fas fa-map-marker-alt"></i> Universiade Village Student Apartment of BUAA
+                            <br>
+                            29 Zhichun Road, Haidian District, Beijing 
+                            <br>
+                            100191 Beijing, China
+                            <br><br>
+                            <i class="fas fa-phone"></i> (+86) 13370926285
+                            <br>
+                            <i class="fas fa-envelope"></i> <a href="mailto:dong.zechen@foxmail.com" class="text-light">dong.zechen@foxmail.com</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 mb-3 text-end">
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/zechendong/" class="text-white" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="https://www.facebook.com/adama.dong.14" class="text-white" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="mailto:dong.zechen@foxmail.com" class="text-white"><i class="fas fa-envelope fa-2x"></i></a>
+                        </div>
+                        <p class="mt-3">© 2025 Zechen Dong</p>
+                    </div>
                 </div>
-                <div class="col-lg-1">
-                </div>
-                <div class=" col-lg-5  mb-3 ">
-                  <strong>Zechen DONG</strong>
-                  <br>
-                  student of Beihang University
-                  <br>
-                  
-                  <br>
-                  Residence Chateau Gombert
-                  <br>
-                  38 Rue Frederic Joliot-Curie 
-                  <br>
-                  13013 Marseille France
-                  <br>
-                  <br>
-                  Phone:&nbsp(+86)&nbsp13370926285
-                  <br>
-                  Email:&nbsp<a href="mailto:dong.zechen@foxmail.com">dong.zechen@foxmail.com</a>
-                </div>
-                <div class="col-lg-2 mb-3"> 
-                  <img src="selfie.jpg" class="img-thumbnail" alt="..." >
-              </div>
-
-
-
-                
-              </div>
             </div>
         </footer>
           
